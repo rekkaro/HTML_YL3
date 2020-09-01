@@ -6,18 +6,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content=""> 
         <meta name="author" content="">
-        <title>Ostukorv</title>
+        <title>Avaleht</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
         <!-- minu CSS -->
         <link rel="stylesheet" href="custom.css">
     </head>
     <body>
-        <!-- päis -->
+        <!-- päis --->
         <header class="py-2">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12 my-3 text-center"><img src="logo2.png" width="50%"></div>              
+                    <div class="col-lg-12 my-3 text-center"><a href="index.html"><img src="logo2.png" width="50%"></a></div>              
                 </div>          
             </div>
         </header>
@@ -36,7 +36,7 @@
                             <a class="dropdown-item" href="#">Vannipiimad</a> 
                             <a class="dropdown-item" href="#">Vannipommid</a>
                             <a class="dropdown-item" href="list.html">Seebid ja du&scaron;igeelid</a>
-                            
+                        
                         </div> 
                     </li> 
                     <li class="nav-item dropdown"> 
@@ -56,94 +56,104 @@
                             <a class="dropdown-item" href="#">Niisutus ja toitmine</a> 
                             <a class="dropdown-item" href="#">Koorijad ja maskid</a> 
                         </div> 
-                    </li>
+                    </li> 
                     <li class="nav-item" ><a class="nav-link" href="meist.html">MEIST</a></li>
                 </ul>
                 <!-- search -->
-                <form class="form-inline m-2 my-lg-0">
+                <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Otsi" aria-label="Search">
-                    <button class="btn btn-outline-white my-2 my-sm-0" type="submit"><svg class="lnr lnr-magnifier"><use xlink:href="#lnr-magnifier"></use></svg></button>
+                    <button class="btn btn-outline-white my-10 my-sm-10" type="submit"><svg class="lnr lnr-magnifier"><use xlink:href="#lnr-magnifier"></use></svg></button>
                 </form>
             </div>
             <!-- cart -->
-            <a href="cart.html"><button class="btn btn-dark my-2 my-sm-0" type="submit"><svg class="lnr lnr-cart"><use xlink:href="#lnr-cart"></use></svg></button></a>
+            <!--
+            <svg class="lnr mt-auto mr-3 my-3 lnr-cart"><use xlink:href="#lnr-cart"></use></svg>
+            -->
+            <button class="btn btn-light my-2 my-sm-0" type="submit"><svg class="lnr lnr-cart"><use xlink:href="#lnr-cart"></use></svg></button>
         </nav> 
+        <!-- breadcrumb -->
         <section>
-            <!-- breadcrumb -->
-            <nav aria-label="breadcrumb" >
-                <ol class="breadcrumb bg-white my-2">
-                    <li class="breadcrumb-item"><a href="index.html">Avaleht</a></li>
-                    <li class="breadcrumb-item active bg-white">Ostukorv</li>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-white my-2 ml-2">
+                    <!-- это иконка с домиком, но у меня не получилось её выровнять нормально
+                    <li class="breadcrumb-item active" aria-current="page"><button class="btn btn-link btn-lg my-2 my-sm-0" type="submit"><svg class="lnr lnr-home"><use xlink:href="#lnr-home"></use></svg></button></li>
+                    -->
+                    <li class="breadcrumb-item active bg-white"  aria-current="page">MEIST</li>
                 </ol>
-            </nav>
+            </nav>  
         </section>
-        <!-- ostukorv -->
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 d-flex align-items-start flex-column">
-                        <div class="mb-auto p-2"><h4>Ostukorvis on 1 toode</h4></div>    
-                        <div class="mb-auto p-2 row">
-                            <div class="col-lg-6">
-                                <img src="soap.png" width="100%">
-                            </div>
-                            <div class="col-lg-6">
-                                <p>15.99&#8364;</p>
-                                <p>Toode 1</p>
-                                    <select class="form-control col-lg-5 form-sm" id="kogus">
-                                        <option>0</option>
-                                        <option selected="selected">1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                    </select>
-                                <br/>
-                            </div>            
-                        </div>
-                        <div class="p-2">
-                            <p>Tarne: <span class="text-primary">tasuta</span></p>
-                            <p>Kokku: <span class="text-primary">15.99&#8364;</span></p>
-                        </div>
-                        <div class="p-2 mx-auto">
-                            <a href="kinnitus.html" class="btn btn-dark btn-lg mb-3">Maksa</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                    <!-- TODO! --->
-                        
-                        <h2>Kontakt info</h2>
+        
+        <!--MAIN--->
+        <h1>Meie grupp</h1>
+        <br>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        <br>
+        <div class="slideshow-container">
 
-<form action="/action_page.php">
-  <label for="fname">Nimi</label><br>
-  <input type="text" id="fname" name="fname" value="Täisnimi"><br>
-  <label for="lname">Sisesta aadress</label><br>
-  <input type="text" id="lname" name="lname" value="Tallinn, ...."><br><br>
-    <p>Vali makseviis</p>
-    <input type="radio" id="male" name="gender" value="male">
-  <label for="male">Pangamakse</label><br>
-  <input type="radio" id="female" name="gender" value="female">
-  <label for="female">Sularahas</label><br>
-  <input type="radio" id="other" name="gender" value="other">
-  <label for="other">Tasuta</label>
-    <br>
-    <select Name="Vali transport" Size="3">  
-  <option> Tulen poodi järgi </option>  
-  <option> Valin Ominiva automaadi </option>  
-  <option> Ei soovi toodet </option>  
-</select>  
-    
-    <br>
-  <input type="submit" value="Submit">
-</form> 
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img/img1.jpg" style="width:60%">
+    <div class="text">Caption Text</div>
+  </div>
 
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img/img2.jpg" style="width:60%">
+    <div class="text">Caption Two</div>
+  </div>
 
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img/img3.jpg" style="width:60%">
+    <div class="text">Caption Three</div>
+  </div>
 
-                        
-                    </div>           
-                </div>   
-            </div>
-        </section>
-        <!-- jalus -->
-        <footer class="bg-dark">
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+        
+        <script>
+            var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}</script>
+        
+        <!-- jalus --->
+    <footer class="bg-dark">
             <div class="container-fluid">
                 <div class="row">
                     <!-- TODO! --->
@@ -157,11 +167,11 @@
                     +352 606060</p><br></div>
                 </div>
             </div>
-        </footer>     
+        </footer>       
         <!-- jQuery, Popper.js, Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
-    </body>
-</html>         
+  </body>
+</html>

@@ -6,18 +6,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content=""> 
         <meta name="author" content="">
-        <title>Ostukorv</title>
-        <!-- Bootstrap CSS -->
+        <title>Toode 1</title>
+        <!-- Bootstrap CSS --->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
-        <!-- minu CSS -->
+        <!-- minu CSS --->
         <link rel="stylesheet" href="custom.css">
     </head>
     <body>
-        <!-- päis -->
+        <!-- päis --->
         <header class="py-2">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12 my-3 text-center"><img src="logo2.png" width="50%"></div>              
+                    <div class="col my-3 text-center"><a href="index.html"><img src="logo2.png" width="50%"></a></div>        
                 </div>          
             </div>
         </header>
@@ -36,7 +36,7 @@
                             <a class="dropdown-item" href="#">Vannipiimad</a> 
                             <a class="dropdown-item" href="#">Vannipommid</a>
                             <a class="dropdown-item" href="list.html">Seebid ja du&scaron;igeelid</a>
-                            
+                        
                         </div> 
                     </li> 
                     <li class="nav-item dropdown"> 
@@ -56,93 +56,45 @@
                             <a class="dropdown-item" href="#">Niisutus ja toitmine</a> 
                             <a class="dropdown-item" href="#">Koorijad ja maskid</a> 
                         </div> 
-                    </li>
+                    </li> 
                     <li class="nav-item" ><a class="nav-link" href="meist.html">MEIST</a></li>
                 </ul>
-                <!-- search -->
+                <!-- search --->
                 <form class="form-inline m-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Otsi" aria-label="Search">
                     <button class="btn btn-outline-white my-2 my-sm-0" type="submit"><svg class="lnr lnr-magnifier"><use xlink:href="#lnr-magnifier"></use></svg></button>
                 </form>
             </div>
-            <!-- cart -->
+            <!-- cart --->
             <a href="cart.html"><button class="btn btn-dark my-2 my-sm-0" type="submit"><svg class="lnr lnr-cart"><use xlink:href="#lnr-cart"></use></svg></button></a>
         </nav> 
         <section>
-            <!-- breadcrumb -->
+            <!-- breadcrumb --->
             <nav aria-label="breadcrumb" >
-                <ol class="breadcrumb bg-white my-2">
+                <ol class="breadcrumb bg-white ml-2">
                     <li class="breadcrumb-item"><a href="index.html">Avaleht</a></li>
-                    <li class="breadcrumb-item active bg-white">Ostukorv</li>
+                    <li class="breadcrumb-item">Vannitooted</li>
+                    <li class="breadcrumb-item"><a href="list.html">Seebid ja du&scaron;igeelid</a></li>
+                    <li class="breadcrumb-item active bg-white">Toode 1</li>
                 </ol>
             </nav>
         </section>
-        <!-- ostukorv -->
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 d-flex align-items-start flex-column">
-                        <div class="mb-auto p-2"><h4>Ostukorvis on 1 toode</h4></div>    
-                        <div class="mb-auto p-2 row">
-                            <div class="col-lg-6">
-                                <img src="soap.png" width="100%">
-                            </div>
-                            <div class="col-lg-6">
-                                <p>15.99&#8364;</p>
-                                <p>Toode 1</p>
-                                    <select class="form-control col-lg-5 form-sm" id="kogus">
-                                        <option>0</option>
-                                        <option selected="selected">1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                    </select>
-                                <br/>
-                            </div>            
-                        </div>
-                        <div class="p-2">
-                            <p>Tarne: <span class="text-primary">tasuta</span></p>
-                            <p>Kokku: <span class="text-primary">15.99&#8364;</span></p>
-                        </div>
-                        <div class="p-2 mx-auto">
-                            <a href="kinnitus.html" class="btn btn-dark btn-lg mb-3">Maksa</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                    <!-- TODO! --->
-                        
-                        <h2>Kontakt info</h2>
-
-<form action="/action_page.php">
-  <label for="fname">Nimi</label><br>
-  <input type="text" id="fname" name="fname" value="Täisnimi"><br>
-  <label for="lname">Sisesta aadress</label><br>
-  <input type="text" id="lname" name="lname" value="Tallinn, ...."><br><br>
-    <p>Vali makseviis</p>
-    <input type="radio" id="male" name="gender" value="male">
-  <label for="male">Pangamakse</label><br>
-  <input type="radio" id="female" name="gender" value="female">
-  <label for="female">Sularahas</label><br>
-  <input type="radio" id="other" name="gender" value="other">
-  <label for="other">Tasuta</label>
-    <br>
-    <select Name="Vali transport" Size="3">  
-  <option> Tulen poodi järgi </option>  
-  <option> Valin Ominiva automaadi </option>  
-  <option> Ei soovi toodet </option>  
-</select>  
-    
-    <br>
-  <input type="submit" value="Submit">
-</form> 
-
-
-
-                        
-                    </div>           
-                </div>   
-            </div>
-        </section>
-        <!-- jalus -->
+        <!-- toode --->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6"><img src="soap.png" class="img-fluid"/></div>
+            <div class="col-lg-6">
+                <h2 class="mb-3">Toode 1</h2>
+                <h4 class="mb-3">15.99&#8364;</h4>
+                <h4 class="mb-2">Kirjeldus</h4>
+                <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor gravida ipsum, non mollis lorem luctus ac. Proin interdum tortor a metus efficitur blandit vitae vitae diam. Donec tortor leo, efficitur ultricies augue vel, consectetur ultrices lacus. Donec sollicitudin eleifend dolor et viverra. Cras ornare velit dapibus nisl gravida maximus. In vulputate semper leo non ultrices. Fusce leo sem, dapibus quis turpis sed, convallis consectetur metus. Integer eget quam sed leo pellentesque feugiat eget in urna. Praesent eu enim velit. Suspendisse eget consequat turpis.</p>
+                <a href="cart.html" class="btn btn-outline-dark btn-lg mb-3">Lisa ostukorvi</a>
+            </div>     
+        </div>
+    </div>
+</section>
+        <!-- jalus --->
         <footer class="bg-dark">
             <div class="container-fluid">
                 <div class="row">
@@ -157,11 +109,11 @@
                     +352 606060</p><br></div>
                 </div>
             </div>
-        </footer>     
+        </footer>          
         <!-- jQuery, Popper.js, Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
     </body>
-</html>         
+</html>      
